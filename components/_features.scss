@@ -1,0 +1,41 @@
+// особенности
+
+.features {
+  display: flex;
+  padding: 94px 0px;
+  & .features__card + .features__card {
+    margin-left: 30px;
+  }
+}
+
+.features__icon {
+  @include display-flex-centr;
+  @include transition;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: $secondary-fill-color;
+  border-radius: 4px;
+}
+
+.features__caption {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: $main-color-text;
+}
+
+.features__descr {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.87;
+  color: $secondary-color-text;
+}

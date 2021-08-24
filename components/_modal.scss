@@ -1,0 +1,60 @@
+.backdrop {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  opacity: 0px;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+
+  height: 581px;
+  width: 528px;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: $complementary-color;
+  text-align: center;
+  font-size: 14px;
+}
+
+.button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: local;
+  //fill: #000;
+  cursor: pointer;
+}
+
+.close-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  fill: #000;
+
+  @include transition;
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+//форма заполнения

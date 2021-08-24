@@ -1,0 +1,16 @@
+.button {
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  width: 200px;
+
+  background-color: $accent-color;
+  color: $complementary-color;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
