@@ -45,9 +45,6 @@ h3 {
     padding: 0px;
 }
 
-.section {
-}
-
 .container {
     margin: 0 auto;
     width: 1200px;
@@ -431,9 +428,6 @@ h3 {
     display:flex;
     justify-content: center;
     align-items: center;
-}
-
-.icon-company {
 }
 
 .icon-company:not(:last-child) {
