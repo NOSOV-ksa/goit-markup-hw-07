@@ -1,0 +1,78 @@
+.project {
+  padding: 94px 0px;
+}
+
+//наши продукты
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.holder {
+  margin: 0px 30px 30px 0px;
+  width: 370px;
+  border: 1px solid $main-fill-color;
+  @include transition;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+.holder:hover,
+.holder:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 1px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.thumb__box {
+  position: relative;
+  overflow: hidden;
+}
+.products__description {
+  padding: 20px 24px;
+}
+
+.products__section {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $main-color-text;
+  margin: 0px 0px 4px;
+  padding: 0px;
+}
+
+.products__box {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+  color: $secondary-color-text;
+}
+
+.popup {
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(100%);
+  @include transition;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5555;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 63px 24px;
+  color: $complementary-color;
+  .holder:hover &,
+  .holder:focus & {
+    transform: translateY(0%);
+  }
+}
