@@ -10,12 +10,21 @@ $complementary-color: #ffffff;
 $border-color: #cecece;
 $color-icon: #afb1b8;
 
+%logo-font{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 3%;
+    color: $accent-color;
+    font-style: normal;
+    line-height: 1.2;
+}
+
 %main-font{
     font-family: Roboto, sans-serif;
     color: $main-color-text;
-  font-family: Roboto, sans-serif;
-  font-size: 15px;
-  letter-spacing: 3%;
-  font-weight: 700;
-  font-style: normal;
+    font-size: 15px;
+    letter-spacing: 3%;
+    font-weight: 700;
+    font-style: normal;
 }
