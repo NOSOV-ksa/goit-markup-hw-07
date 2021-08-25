@@ -6,6 +6,7 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
 }
 
 .is-hidden {
@@ -40,8 +41,12 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: local;
-  //fill: #000;
+  fill: #000;
+
   cursor: pointer;
+  .close-icon:hover {
+    fill: $accent-color;
+  }
 }
 
 .close-icon {
@@ -52,9 +57,30 @@
   fill: #000;
 
   @include transition;
-  &:hover {
-    fill: $accent-color;
-  }
 }
 
 //форма заполнения
+
+.fieldset {
+  border: none;
+  margin: 0px 0px 20px;
+  padding: 0px;
+}
+
+.form-name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include transition;
+}
+
+.label-item {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  color: $secondary-color-text;
+
+  @include transition;
+
+  cursor: pointer;
+}

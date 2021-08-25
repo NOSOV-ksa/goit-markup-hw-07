@@ -508,7 +508,7 @@ h3 {
     font-size: 14px;
 } */
 
-.button-close {
+/* .button-close {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -535,7 +535,7 @@ h3 {
 
 .close-icon:hover{
     fill: var(--accent-color);
-}
+} */
 
 /*------------------ форма заполнения ------------------*/
 
@@ -576,14 +576,14 @@ h3 {
 fill: var(--accent-color);
 }
 
-.form-name {
+/* .form-name {
     display: flex;
     flex-direction: column;
     position: relative;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .form-field:not(:last-child){
     margin-bottom: 10px;
@@ -654,11 +654,11 @@ fill: var(--accent-color);
     color: var(--accent-color);
 }
 
-.fieldset{
+/* .fieldset{
     border: none;
     margin: 0px 0px 20px;
     padding: 0px;
-}
+} */
 
 .checkholder__link{
     display: flex;
