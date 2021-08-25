@@ -25,12 +25,10 @@
 .footer-area {
   margin-bottom: 9px;
   &--contact {
-    font-family: Roboto, sans-serif;
+    @extend %main-font;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
   }
 }
 
@@ -39,10 +37,8 @@
 }
 
 .area {
-  font-family: Roboto, sans-serif;
+  @extend %main-font;
   color: $complementary-color;
-  font-style: normal;
-  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
@@ -51,9 +47,7 @@
 .accede {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   color: $complementary-color;
   margin: 0px;
 }

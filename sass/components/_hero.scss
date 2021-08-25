@@ -22,14 +22,14 @@
   left: 50%;
   transform: translateX(-50%);
 
-  font-family: Roboto, sans-serif;
+  @extend %main-font;
+  color: $complementary-color;
   text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: $complementary-color;
 }
 
 .button--hero {
