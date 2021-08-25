@@ -10,11 +10,11 @@ $complementary-color: #ffffff;
 $border-color: #cecece;
 $color-icon: #afb1b8;
 
-$font-famale:$font-famale {
+%main-font{
     font-family: Roboto, sans-serif;
     color: $main-color-text;
   font-family: Roboto, sans-serif;
-  font-size: ;
+  font-size: 15px;
   letter-spacing: 3%;
   font-weight: 700;
   font-style: normal;
