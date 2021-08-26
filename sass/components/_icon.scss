@@ -6,19 +6,23 @@
 .social-item {
   width: 44px;
   height: 44px;
-  @include transition;
-  & .icon-link {
-    @include display-flex-centr;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    @include transition;
-  }
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
 
+.icon-link {
+  @include transition;
+  @include display-flex-centr;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.social-icon {
+  @include transition;
+  fill: $color-icon;
+}
 .icon-link:hover,
 .icon-link:focus {
   background-color: $accent-color;
@@ -28,15 +32,10 @@
   }
 }
 
-.social-icon {
-  @include transition;
-
-  fill: $color-icon;
+.footer--social-icon {
+background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-icon--footer {
-  fill: $complementary-color;
-}
 
 // логотипы клиентов
 

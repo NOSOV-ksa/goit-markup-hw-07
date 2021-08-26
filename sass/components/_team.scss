@@ -32,8 +32,10 @@
 
 .command__skills {
   @extend %main-font;
-   font-size: 16px;
+  font-weight: 400;
+  color: $secondary-color-text;
+  font-size: 16px;
   line-height: 1.18;
-   text-align: center;
+  text-align: center;
   margin: 10px 0px 16px;
 }

@@ -13,14 +13,10 @@
 }
 
 .list__footer {
-  margin-top: 20px;
+ margin-top: 20px;
 }
 
-.accede--list__footer {
-  @extend .list__footer;
-  display: flex;
-  justify-content: center;
-}
+
 
 .footer-area {
   margin-bottom: 9px;
